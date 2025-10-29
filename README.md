@@ -338,25 +338,47 @@ Menampilkan Formulir yang rapi dengan input email dan textarea. Komponen ini men
         .circle-2 { background-color: #4d7fe5;} 
         .circle-3 { background-color: #4de5c2;} 
 
-        /* Gaya untuk Featurette Image Placeholders */
-        .featurette-img-left, .featurette-img-right {
-            width: 150px;
-            height: 150px;
-            background-color: #7ba27a;
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 0.8em;
-            border-radius: 5px;
-            float: none !important; /* Nonaktifkan float kustom untuk responsivitas */
+        /* Gaya kustom untuk gambar Featurette yang baru */
+        .featurette-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px; /* Tambahkan sedikit radius agar estetik */
+            object-fit: cover; /* Pastikan gambar terlihat baik */
         }
-        
+
+        /* Hapus atau modifikasi gaya featurette-img-left/right karena sekarang menggunakan tag <img> */
+        .featurette-img-left, .featurette-img-right {
+            width: 100%; /* Ubah agar lebih responsif */
+            height: auto;
+            background-color: transparent; /* Hapus warna background placeholder */
+            margin-bottom: 10px;
+            display: block; /* Ganti dari flex ke block jika pakai img */
+            align-items: initial;
+            justify-content: initial;
+            color: initial;
+            font-size: initial;
+            border-radius: initial;
+            float: none !important; 
+        }
+
         /* Teks di dalam circle-placeholder pada About/Portfolio */
         .portfolio-item .circle-placeholder {
             width: 100px;
             height: 100px;
+        }
+        
+        /* Gaya kustom untuk gambar Portofolio yang baru */
+        .portfolio-img-container {
+            height: 200px; /* Tinggi tetap untuk konsistensi */
+            overflow: hidden;
+            border-radius: 5px 5px 0 0;
+            margin-bottom: -15px; /* Angkat sedikit agar menempel dengan card body */
+        }
+
+        .portfolio-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         /* Navigasi dan Konten (untuk JS agar fungsionalitas hide/show tetap berjalan) */
@@ -455,7 +477,7 @@ Menampilkan Formulir yang rapi dengan input email dan textarea. Komponen ini men
                     
                     <div class="row featurette-block border-top pt-4">
                         <div class="col-md-3 d-flex align-items-center justify-content-center">
-                            <div class="featurette-img-left">Alat Pel Lantai</div>
+                            <img src="Foto Alat Pel.png" class="featurette-img" alt="Foto Alat Pel Lantai Estetik">
                         </div>
                         <div class="col-md-9">
                             <h3 class="fw-normal text-success">Teknik Membersihkan Lantai.</h3>
@@ -471,11 +493,11 @@ Menampilkan Formulir yang rapi dengan input email dan textarea. Komponen ini men
 
                     <div class="row featurette-block border-top pt-4 mt-4">
                         <div class="col-md-3 order-md-2 d-flex align-items-center justify-content-center">
-                            <div class="featurette-img-right">Vakum Debu</div>
+                            <img src="Foto Alat Vakum Debu.png" class="featurette-img" alt="Foto Alat Vakum Debu Estetik">
                         </div>
                         <div class="col-md-9 order-md-1">
                             <h3 class="fw-normal text-success">Pentingnya Vakum Rutin untuk Kesehatan.</h3>
-                            <p>Vakum rutin merupakan langkah kunci untuk menciptakan lingkungan hidup yang sehat dan aman, melindungi kesehatan keluarga dari penyakit pernapasan yang dipicu oleh polutan dan                                     alergen di rumah.</p>
+                            <p>Vakum rutin merupakan langkah kunci untuk menciptakan lingkungan hidup yang sehat dan aman, melindungi kesehatan keluarga dari penyakit pernapasan yang dipicu oleh polutan dan alergen di rumah.</p>
                         </div>
                     </div>
                 </section>
@@ -495,26 +517,35 @@ Menampilkan Formulir yang rapi dengan input email dan textarea. Komponen ini men
                     
                     <h3 class="text-secondary">Portofolio Proyek Terakhir</h3>
                     <div class="row g-4 mt-2 mb-5">
+                        
                         <div class="col-md-4">
                             <div class="card text-center h-100 shadow-sm border-0">
+                                <div class="portfolio-img-container">
+                                    <img src="Foto nyapu sekitar halaman sekitar rumah.png" class="portfolio-img" alt="Pembersihan Area Sekitar Rumah">
+                                </div>
                                 <div class="card-body">
-                                    <div class="circle-placeholder mx-auto" style="background-color: #7d52a2;">Rumah A</div>
                                     <p class="card-text mt-3">Pembersihan Area Sekitar Rumah.</p>
                                 </div>
                             </div>
                         </div>
+
                         <div class="col-md-4">
                             <div class="card text-center h-100 shadow-sm border-0">
+                                <div class="portfolio-img-container">
+                                    <img src="Foto nyapu sekitar halaman depan rumah.png" class="portfolio-img" alt="Pembersihan Area Halaman Depan">
+                                </div>
                                 <div class="card-body">
-                                    <div class="circle-placeholder mx-auto" style="background-color: #a25252;">Rumah B</div>
                                     <p class="card-text mt-3">Pembersihan Area Halaman Depan.</p>
                                 </div>
                             </div>
                         </div>
+
                         <div class="col-md-4">
                             <div class="card text-center h-100 shadow-sm border-0">
+                                <div class="portfolio-img-container">
+                                    <img src="Foto nyapu sekitar halaman belakang rumah.png" class="portfolio-img" alt="Sanitasi dan kebersihan Area Halaman Belakang">
+                                </div>
                                 <div class="card-body">
-                                    <div class="circle-placeholder mx-auto" style="background-color: #52a27d;">Rumah C</div>
                                     <p class="card-text mt-3">Sanitasi dan kebersihan Area Halaman Belakang.</p>
                                 </div>
                             </div>
