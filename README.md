@@ -54,34 +54,6 @@ Menunjukkan halaman web berhasil memuat Bootstrap, ditandai dengan tombol Primar
 Menunjukkan perbedaan layout antara Standard Container `(.container)`, yang membatasi lebar konten dan memusatkannya, dan Fluid Container `(.container-fluid)`, yang merentang selebar viewport.
 <img width="1917" height="1017" alt="Container" src="https://github.com/user-attachments/assets/bb314d63-b00d-4f1a-8fd6-154fe4797d09" />
 <img width="1918" height="1020" alt="Grid System" src="https://github.com/user-attachments/assets/8bbe9aed-b788-4b52-9b79-f087b9e1577c" />
-```html
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #181819;">
-        <div class="container">
-            <a class="navbar-brand" href="#beranda">Pembersih Halaman</a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-custom active" aria-current="page" href="#beranda">Beranda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-custom" href="#artikel">Artikel</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-custom" href="#tentang">Tentang</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-custom" href="#kontak">Kontak</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-```
 `Ini adalah kerangka utama yang menggunakan kelas .container dan membagi konten menjadi kolom utama (8 kolom) dan sidebar (4 kolom) menggunakan kelas .row, .col-lg-8, dan .col-lg-4`.
 ```html
 <div class="container bg-white shadow-lg my-4 p-4 p-md-5"> 
@@ -120,24 +92,6 @@ Menambahkan bilah navigasi Navbar `(.navbar-expand-lg .bg-dark)` di atas. Di baw
 ### 4.Komponen: Navbar `(Navigasi)`
 Menampilkan berbagai macam Tombol `(.btn)` dengan warna kontekstual `(Primary, Success, Danger, dll.)` yang berasal dari kelas-kelas Bootstrap & Bagian ini juga menunjukkan penggunaan komponen Navbar dengan kelas .navbar, .navbar-brand, dan .navbar-nav untuk navigasi utama.
 <img width="1918" height="1020" alt="Komponen Navbar " src="https://github.com/user-attachments/assets/d3c0bc3f-ddee-47e8-8027-77a0b2a3f442" />
-```html
-<div class="container mt-4 mb-5">
-    <h2>Komponen Tombol (Buttons)</h2>
-    <p>Tombol-tombol Bootstrap menggunakan kelas **`.btn`** dasar, diikuti oleh kelas konteks warna seperti **`.btn-primary`**.</p>
-    
-    <div class="d-grid gap-2 d-md-block">
-        <button class="btn btn-primary me-2">Primary</button>
-        <button class="btn btn-secondary me-2">Secondary</button>
-        <button class="btn btn-success me-2">Success</button>
-        <button class="btn btn-danger me-2">Danger</button>
-        <button class="btn btn-warning me-2">Warning</button>
-        <button class="btn btn-info me-2">Info</button>
-        <button class="btn btn-light me-2">Light</button>
-        <button class="btn btn-dark">Dark</button>
-    </div>
-</div>
-```
-
 ```html
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #181819;">
     <div class="container">
