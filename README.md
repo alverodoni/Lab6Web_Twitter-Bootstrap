@@ -55,32 +55,32 @@ Menunjukkan perbedaan layout antara Standard Container `(.container)`, yang memb
 <img width="1917" height="1017" alt="Container" src="https://github.com/user-attachments/assets/bb314d63-b00d-4f1a-8fd6-154fe4797d09" />
 <img width="1918" height="1020" alt="Grid System" src="https://github.com/user-attachments/assets/8bbe9aed-b788-4b52-9b79-f087b9e1577c" />
 ```html
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Praktikum 6</a>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #181819;">
+        <div class="container">
+            <a class="navbar-brand" href="#beranda">Pembersih Halaman</a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Artikel</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Kontak</a>
-                </li>
-            </ul>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom active" aria-current="page" href="#beranda">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="#artikel">Artikel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="#tentang">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="#kontak">Kontak</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 ```
 ### Container dan Grid System `(Struktur Utama)`
 `Ini adalah kerangka utama yang menggunakan kelas .container dan membagi konten menjadi kolom utama (8 kolom) dan sidebar (4 kolom) menggunakan kelas .row, .col-lg-8, dan .col-lg-4`.
