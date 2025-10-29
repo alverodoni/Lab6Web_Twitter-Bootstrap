@@ -50,7 +50,7 @@ Menunjukkan halaman web berhasil memuat Bootstrap, ditandai dengan tombol Primar
     </body>
 ```
 
-### 2.Container
+### 2.Container dan Grid System `(Struktur Utama)`
 Menunjukkan perbedaan layout antara Standard Container `(.container)`, yang membatasi lebar konten dan memusatkannya, dan Fluid Container `(.container-fluid)`, yang merentang selebar viewport.
 <img width="1917" height="1017" alt="Container" src="https://github.com/user-attachments/assets/bb314d63-b00d-4f1a-8fd6-154fe4797d09" />
 <img width="1918" height="1020" alt="Grid System" src="https://github.com/user-attachments/assets/8bbe9aed-b788-4b52-9b79-f087b9e1577c" />
@@ -82,7 +82,6 @@ Menunjukkan perbedaan layout antara Standard Container `(.container)`, yang memb
         </div>
     </nav>
 ```
-### Container dan Grid System `(Struktur Utama)`
 `Ini adalah kerangka utama yang menggunakan kelas .container dan membagi konten menjadi kolom utama (8 kolom) dan sidebar (4 kolom) menggunakan kelas .row, .col-lg-8, dan .col-lg-4`.
 ```html
 <div class="container bg-white shadow-lg my-4 p-4 p-md-5"> 
@@ -102,43 +101,6 @@ Menunjukkan perbedaan layout antara Standard Container `(.container)`, yang memb
 ### 3.Komponen: Button `(Tombol)`
 Menambahkan bilah navigasi Navbar `(.navbar-expand-lg .bg-dark)` di atas. Di bawahnya, terlihat Grid System yang menunjukkan tata letak kolom `(misalnya, 4+4+4 atau 8+4)`.
 <img width="1918" height="1020" alt="Grid System" src="https://github.com/user-attachments/assets/ce832be8-a045-4c2a-9688-9bfe0ddf4302" />
-```html
-<div class="container">
-    <h1 class="mt-4">Halo, Bootstrap!</h1>
-    <button class="btn btn-primary mb-4">Ini Tombol Bootstrap</button>
-</div>
-
-<hr>
-
-<div class="container container-example">
-    <h3>Standard Container (`.container`)</h3>
-    <p>Konten ini berada di tengah dan memiliki lebar maksimum yang disesuaikan pada ukuran layar tertentu.</p>
-</div>
-
-<div class="container-fluid container-fluid-example">
-    <h3>Fluid Container (`.container-fluid`)</h3>
-    <p>Konten ini memenuhi seluruh lebar viewport (layar) tanpa batas.</p>
-</div>
-
-<hr>
-
-<div class="container mt-4 mb-4">
-    <h2>Sistem Grid Bootstrap (12 Kolom)</h2>
-    <p>Sistem grid dibagi menjadi 12 kolom virtual. Semua kolom dalam satu baris harus berjumlah 12.</p>
-
-    <div class="row">
-        <div class="col-4">Kolom 4</div>
-        <div class="col-4">Kolom 4</div>
-        <div class="col-4">Kolom 4</div>
-    </div>
-
-    <p class="mt-3">Responsif: Kolom 8 dan Kolom 4 (berlaku untuk layar Medium/Tablet ke atas)</p>
-    <div class="row">
-        <div class="col-md-8">Kolom 8 (Di bawah Medium, akan menjadi 12)</div>
-        <div class="col-md-4">Kolom 4 (Di bawah Medium, akan menjadi 12)</div>
-    </div>
-</div>
-```
 ### Tombol Utama `(Lihat Layanan)`
 `Beberapa contoh penggunaan tombol Bootstrap dengan kelas seperti .btn, .btn-primary, .btn-lg, .btn-outline-secondary, dan .btn-sm`.
 ```html
