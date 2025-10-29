@@ -32,28 +32,24 @@ Menunjukkan halaman web berhasil memuat Bootstrap, ditandai dengan tombol Primar
 ```
 ### Setup Bootstrap `(CSS dan JS)`
 `Bagian ini mencakup pemanggilan file CSS Bootstrap, struktur dasar Container, dan penggunaan Grid System (row dan col)`.
-```html
-<head>
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-        crossorigin="anonymous">
-    
-    </head>
-<body>
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous">
-    </script>
-    </body>
+```CSS
+<link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous">
+```
+```JS
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous">
+</script>
 ```
 
 ### 2.Container dan Grid System `(Struktur Utama)`
 Menunjukkan perbedaan layout antara Standard Container `(.container)`, yang membatasi lebar konten dan memusatkannya, dan Fluid Container `(.container-fluid)`, yang merentang selebar viewport.
-<img width="1917" height="1017" alt="Container" src="https://github.com/user-attachments/assets/bb314d63-b00d-4f1a-8fd6-154fe4797d09" />
-<img width="1918" height="1020" alt="Grid System" src="https://github.com/user-attachments/assets/8bbe9aed-b788-4b52-9b79-f087b9e1577c" />
+<img width="1918" height="1018" alt="Container dan Grid System (Struktur Utama)" src="https://github.com/user-attachments/assets/f9e160dd-1550-41ea-9a6c-469a63e3b149" />
 `Ini adalah kerangka utama yang menggunakan kelas .container dan membagi konten menjadi kolom utama (8 kolom) dan sidebar (4 kolom) menggunakan kelas .row, .col-lg-8, dan .col-lg-4`.
 ```html
 <div class="container bg-white shadow-lg my-4 p-4 p-md-5"> 
@@ -72,26 +68,26 @@ Menunjukkan perbedaan layout antara Standard Container `(.container)`, yang memb
 
 ### 3.Komponen: Button `(Tombol)`
 Menambahkan bilah navigasi Navbar `(.navbar-expand-lg .bg-dark)` di atas. Di bawahnya, terlihat Grid System yang menunjukkan tata letak kolom `(misalnya, 4+4+4 atau 8+4)`.
-<img width="1918" height="1020" alt="Grid System" src="https://github.com/user-attachments/assets/ce832be8-a045-4c2a-9688-9bfe0ddf4302" />
+<img width="1918" height="1020" alt="Button" src="https://github.com/user-attachments/assets/28587a17-3067-4b0c-8d14-e7894ca70d19" />
 ### Tombol Utama `(Lihat Layanan)`
 `Beberapa contoh penggunaan tombol Bootstrap dengan kelas seperti .btn, .btn-primary, .btn-lg, .btn-outline-secondary, dan .btn-sm`.
 ```html
 <a href="#artikel" class="btn btn-primary btn-lg">Lihat Layanan »</a>
 ```
-### Tombol Sekunder `(Lihat detail)`
+### Tombol Sekunder `(Tentang kami)`
 ```html
 <div class="col-md-4 mb-4 mb-md-0">
     <a href="#" class="btn btn-outline-secondary btn-sm">Lihat detail</a>
 </div>
 ```
-### Tombol Formulir `(Kirim Pesan)`
+### Tombol Formulir `(Booking layanan)`
 ```html
 <button type="submit" class="btn btn-primary w-100">Kirim Pesan / Booking</button>
 ```
 
 ### 4.Komponen: Navbar `(Navigasi)`
 Menampilkan berbagai macam Tombol `(.btn)` dengan warna kontekstual `(Primary, Success, Danger, dll.)` yang berasal dari kelas-kelas Bootstrap & Bagian ini juga menunjukkan penggunaan komponen Navbar dengan kelas .navbar, .navbar-brand, dan .navbar-nav untuk navigasi utama.
-<img width="1918" height="1020" alt="Komponen Navbar " src="https://github.com/user-attachments/assets/d3c0bc3f-ddee-47e8-8027-77a0b2a3f442" />
+<img width="1918" height="1017" alt="Navbar" src="https://github.com/user-attachments/assets/ed5af2fa-790b-4186-84b0-2ec47e44cc84" />
 ```html
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #181819;">
     <div class="container">
@@ -123,77 +119,25 @@ Menampilkan berbagai macam Tombol `(.btn)` dengan warna kontekstual `(Primary, S
 
 ### 5.Komponen: Card `(Kartu)`
 Menunjukkan implementasi Komponen Card `(.card)` yang digunakan untuk mengelompokkan konten `(gambar, judul, teks, dan tombol)` menjadi unit yang rapi.
-<img width="1918" height="1017" alt="Komponen Card " src="https://github.com/user-attachments/assets/e40e127d-d8df-4c2c-8389-4a38edadc5eb" />
+<img width="1918" height="1018" alt="Kartu" src="https://github.com/user-attachments/assets/344cd245-bfd7-4761-88f4-361b08e1dcc1" />
 ```html
-<div class="container mt-4 mb-5">
-    <h2>Komponen Card (Kartu)</h2>
-    <p>Card adalah wadah yang fleksibel dan dapat diperluas untuk menampilkan konten seperti gambar, judul, dan teks.</p>
-    
-    <div class="card" style="width: 18rem;">
-        <img src="https://via.placeholder.com/286x180?text=Gambar+Card" class="card-img-top" alt="Placeholder image">
-        
-        <div class="card-body">
-            <h5 class="card-title">Judul Card</h5>
-            <p class="card-text">Ini adalah deskripsi singkat di dalam card. Sangat bagus untuk mempresentasikan informasi ringkas.</p>
-            <a href="#" class="btn btn-primary">Lihat Detail</a>
+                <div class="card mb-4">
+                    <div class="card-header bg-info text-white fw-bold">Informasi Singkat</div>
+                    <div class="card-body bg-light">
+                        <p class="card-text small text-muted">
+                            Kami melayani area Sekitar dangga. Jam operasional layanan: Senin-Sabtu, 08:00 - 21:00. Hubungi kami untuk jadwal di luar jam tersebut.
+                        </p>
+                    </div>
+                </div>
+                
+            </div> 
+        </div> 
         </div>
-    </div>
-</div>
-```
-### Card Sidebar
-```html
-<div class="card mb-4">
-    <div class="card-header bg-primary text-white fw-bold">Link Cepat</div>
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item"><a href="#tentang" class="sidebar-link text-decoration-none text-dark">Tentang Kami</a></li>
-        </ul>
-</div>
-<div class="card mb-4">
-    <div class="card-header bg-info text-white fw-bold">Informasi Singkat</div>
-    <div class="card-body bg-light">
-        <p class="card-text small text-muted">
-            Kami melayani area Sekitar dangga. Jam operasional layanan: Senin-Sabtu, 08:00 - 21:00. Hubungi kami untuk jadwal di luar jam tersebut.
-        </p>
-    </div>
-</div>
-```
-### Card Portofolio
-```html
-<div class="row g-4 mt-2 mb-5">
-    <div class="col-md-4">
-        <div class="card text-center h-100 shadow-sm border-0">
-            <div class="card-body">
-                <div class="circle-placeholder mx-auto" style="background-color: #7d52a2;">Rumah A</div>
-                <p class="card-text mt-3">Pembersihan Area Sekitar Rumah.</p>
-            </div>
-        </div>
-    </div>
-    </div>
 ```
 
 ### 6.Komponen: Form `(Formulir)`
 Menampilkan Formulir yang rapi dengan input email dan textarea. Komponen ini menggunakan kelas .form-control untuk input dan .form-label untuk label agar terlihat modern dan responsif.
-<img width="1918" height="1017" alt="Komponen Form " src="https://github.com/user-attachments/assets/13f81dd4-ec6e-41d4-a77c-73de3d2ae074" />
-```html
-<div class="container mt-4 mb-5">
-    <h2>Komponen Formulir (Form)</h2>
-    <p>Formulir menggunakan kelas **`.form-control`** untuk *input* dan **`.form-label`** untuk *label* agar terlihat rapi dan lebar penuh.</p>
-    
-    <form>
-        <div class="mb-3">
-            <label for="emailInput" class="form-label">Alamat Email</label>
-            <input type="email" class="form-control" id="emailInput" placeholder="nama@contoh.com">
-        </div>
-        
-        <div class="mb-3">
-            <label for="pesanText" class="form-label">Pesan</label>
-            <textarea class="form-control" id="pesanText" rows="3"></textarea>
-        </div>
-        
-        <button type="submit" class="btn btn-primary">Kirim</button>
-    </form>
-</div>
-```
+<img width="1918" height="1020" alt="Formulir" src="https://github.com/user-attachments/assets/1af6da41-7670-4e96-a2e7-ddf8ac0fbc8d" />
 
 ```html
 <section id="kontak" class="content-section">
@@ -644,3 +588,15 @@ Menampilkan Formulir yang rapi dengan input email dan textarea. Komponen ini men
 </body>
 </html>
 ```
+
+### Jawaban 
+1. Refactor Layout Praktikum 4:
+`Sudah Direfaktor. Layout utama menggunakan <nav> Bootstrap, .row utama dibagi menjadi .col-lg-8 (konten utama) dan .col-lg-4 (sidebar). Bagian "Keunggulan Kami" menggunakan .row dengan tiga .col-md-4 (menggantikan .box). Sidebar menggunakan dua komponen .card (menggantikan .widget-box). CSS float atau clear manual tidak digunakan`.
+
+2. Refactor Form Praktikum 5:
+`Sudah Direfaktor. Formulir di bagian <section id="kontak"> dibuat rapi menggunakan kelas Bootstrap seperti .form-control, .form-label, dan .btn btn-primary w-100`.
+
+3. Tugas: Buat Halaman Portfolio Sederhana:
+    A. Navbar: Ada (<nav class="navbar...">).
+    B. Section "Tentang Saya" (1 baris, 2 kolom): Tidak ada pemisahan khusus 2 kolom (foto + deskripsi diri) pada bagian "Tentang Kami" yang terlihat.
+    C. Section "Portfolio Saya" (1 baris, 3 kolom): Ada di dalam <section id="tentang"> yang menggunakan .row g-4 mt-2 mb-5 dengan tiga kolom .col-md-4, masing-masing berisi komponen .card lengkap dengan gambar         `(portfolio-img)` dan deskripsi.
