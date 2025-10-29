@@ -53,6 +53,7 @@ Menunjukkan halaman web berhasil memuat Bootstrap, ditandai dengan tombol Primar
 ### 2.Container
 Menunjukkan perbedaan layout antara Standard Container `(.container)`, yang membatasi lebar konten dan memusatkannya, dan Fluid Container `(.container-fluid)`, yang merentang selebar viewport.
 <img width="1917" height="1017" alt="Container" src="https://github.com/user-attachments/assets/bb314d63-b00d-4f1a-8fd6-154fe4797d09" />
+<img width="1918" height="1020" alt="Grid System" src="https://github.com/user-attachments/assets/8bbe9aed-b788-4b52-9b79-f087b9e1577c" />
 ```html
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
